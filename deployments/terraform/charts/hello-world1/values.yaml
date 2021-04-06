@@ -8,7 +8,8 @@ image:
   repository: ${deployment_image}
   pullPolicy: IfNotPresent
 
-imagePullSecrets: []
+imagePullSecrets:
+- name: nexus-creds
 nameOverride: ""
 fullnameOverride: ""
 
